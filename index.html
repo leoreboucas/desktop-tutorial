@@ -1,7 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Reboucas - GIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/brand_leoreboucas_favicon.png" type="image/png">
+</head>
 <body>
-<h1>Leo Rebouças</h1>
-<p>Um novo site em 2021</p>
+    <div class="container">
+            <div class="imageTop">
+                <header class="menu">
+                    <div class="logo">
+                        <a href="#"><img src="images/brand_leoreboucas_header.png"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">+48 509 963 316</a></li>
+                            <li><a href="#">leo@leoreboucas.com</a></li>
+                            <li><a href="https://instagram.com/leoreboucas" target="_blank"><img src="images/instagram-brands.svg"></a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="pHeader">
+                    <h1>IMPROVE WORK LIFE</h1>
+                    <div class="callToAction">
+                        <h5>Be clear about your potentials, your history and what to do better with them.</h5>
+                        <button id="buttonCallToAction" onclick="openModal()" class="button-free-session">Get a free session!</button>
+                    </div>
+                    
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="form-modal">
+                                <p class="p-msg form-modal-p">You will recieve an e-mail with the available times.</p>
+                                <p class="form-modal-msg form-modal-error" id="validationName"></p>
+                                <input type="text" id="name" placeholder="Your name" class="input-modal">
+                                <p class="form-modal-msg form-modal-error" id="validationEmail"></p>
+                                <input type="email" id="email" placeholder="Your e-mail" class="input-modal">
+                                <button onclick="sendEmail('freeSession')" class="button-free-session">Try a free session without any compromise!</button>
+                            </div>
+                            <p class="p-msg form-modal-confirmation" id="confirmationEmail"></p>
+                            <p class="p-msg form-modal-error" id="errorSendEmail"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
