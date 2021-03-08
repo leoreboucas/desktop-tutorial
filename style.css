@@ -1,0 +1,684 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    background-color: black;
+    height: 100%;
+    color: #333333;
+}
+
+.menu {
+    height: 62px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    min-height: 500px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+section header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section header h2 {
+    margin-top: 20px;
+}
+
+.imageTop{
+    background-image: url("images/imageTop-03.jpeg");
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+}
+
+.pHeader{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    margin: 0;
+}
+
+.callToAction {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* padding: 7px 7px 7px 15px; */
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    /* align-items: center; */
+    justify-content: flex-start;
+    /* height: 150px; */
+    margin-bottom: 270px;
+    border: none;
+    border-radius: 5px;
+    width: 715px;
+}
+
+.program .callToAction {
+    background-color: rgb(240, 239, 239);
+}
+
+nav {
+    font-weight: 200;
+    color: rgb(180, 180, 180);
+    font-weight: 400;
+    margin: 0px 10px;
+}
+
+a {
+    text-decoration: none;    
+    color: rgb(180, 180, 180);
+    color: rgb(200, 200, 200);
+    font-weight: 400;
+}
+
+a:hover {
+    color: rgb(238, 238, 238);
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 20px;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h5 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    /* line-height: 1.3; */
+    color: white;
+    /* align-items: center; */
+    font-weight: 500;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px;
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    /* height: 50px; */
+    /* margin-bottom: 10px; */
+    border: none;
+    border-radius: 5px;
+}
+
+h4 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.1rem;
+    margin: 2px;
+}
+
+.container {
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(248, 248, 244);
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0 0;
+}
+
+.boxMsg {
+    text-align: left;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #b3b3b3;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 20px;
+    width: 285px;
+    background-color: white;
+}
+
+.boxMsg p {
+    background-color: white;
+    margin: 0;
+    padding: 2px 15px;
+}
+
+h1{
+    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin: 2px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 2px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 10px 15px 4px 15px;
+    font-size: 1.3rem;
+    background-color: white;
+}
+
+header h2 {
+    margin-bottom: 10px;
+}
+
+article p {
+    margin: 7px;
+    font-weight: 500;
+}
+
+article h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    /* text-align: right; */
+    color: rgb(182, 1, 1);
+    font-size: 1.2rem;
+}
+
+.coaching {
+    /* background-color: rgb(243, 242, 235);
+    background-image: url("images/path-coaching.svg");
+    background-repeat: no-repeat;
+    background-position:bottom; */
+    background-color: white;
+}
+
+/* .coaching header {
+    background-image: url("images/path-coaching.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+} */
+
+.testemonial {
+    background-color: rgb(247, 247, 247);
+}
+
+.program {
+    background-color: white;
+}
+
+.about {
+    background-color: rgb(247, 247, 247);
+}
+
+.contact {
+    background-color: #111111;
+    color: white;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    margin: 50px 100px 10px 10px;
+    width: 400px;
+    height: 500px;
+}
+
+.needCoach em {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #838383;
+    background-color: rgb(247, 247, 247);
+    /* font-family: 'Nothing You Could Do', cursive; */
+    padding: 2px 2px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.needCoach article {
+    padding-top: 30px;
+    max-width: 800px; ;
+}
+
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+.needCoachArticle {
+    width: 800px;
+    line-height: 150%;
+}
+
+.needCoachArticle .callToAction {
+    background-color: rgba(128, 128, 128, 0.2);
+    margin-top: 30px;
+}
+
+
+
+
+
+ 
+.modal2 {
+    display: none;
+    position: fixed; 
+    padding-top: 50px;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content2 {
+    position: relative; 
+    background-color: white;
+    padding: 20px; 
+    margin: auto; 
+    width: 200px;  
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .close-btn {
+    float: right; 
+    color: lightgray; 
+    font-size: 24px;  
+    font-weight: bold;
+  }
+
+  .close-btn:hover {
+    color: darkgray;
+  }
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+ 
+
+
+
+
+
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-close {
+    /* background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 10px 20px;
+    border: 1px solid #888; */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 0;
+    width: 420px; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px 20px 20px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    color: darkgray;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .close:hover,
+  .close:focus {
+    /* color: black;
+    color: lightgray; 
+    text-decoration: none;*/
+    /* border: 1px darkgray solid;
+    border-radius: 25px; */
+    cursor: pointer;
+  }
+
+.form-modal-p {
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+}
+
+.form-modal-confirmation {
+    color: rgb(90, 151, 114);
+    font-weight: 700;
+}
+
+.form-modal-error {
+    color: rgb(151, 90, 90);
+    font-weight: 700;
+}
+
+.form-modal-msg {
+    margin: 0 0 0 10px;
+}
+
+input {
+    margin: 0 10px 10px 10px;
+    padding: 10px 13px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+
+.input-contact {
+    border: 2px #6d6d6d solid;
+    color: white;
+    background-color: #111111;
+}
+
+textarea {
+    margin: 0 10px 10px 10px;
+    padding: 10px 13px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+
+.textarea-contact {
+    border: 2px #6d6d6d solid;
+    color: white;
+    background-color: #111111;
+}
+
+.p-msg {
+    margin: 0 10px 10px 10px;
+}
+
+button {
+    margin: 0px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-free-session {
+    background-color: #ffcc00;
+    /* align-self: center; */
+    /* margin-left: 115px; */
+}
+
+.button-free-session:hover {
+    background-color: #fada20;
+    /* transform: scale(1.1); */
+}
+
+.button-contact {
+    background-color: #555555;
+    color: white;
+}
+
+.button-contact:hover {
+    background-color: #6d6d6d;
+}
+
+footer {
+    height: 62px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-new {
+    display: flex;
+}
+
+.ul-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.contact-info {
+    justify-items: start;
+    width: 400px;
+    margin-left: 100px;
+}
+
+.copyright {
+    display: flex;
+    align-items: flex-end;
+    /* height: 260px; */
+    /* margin-right: 10px; */
+    margin: 10px 10px 22px 50px;
+}
+
+.li-contact {
+    padding: 0 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.contact-success {
+    color: rgb(105, 180, 134);
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contact-error {
+    color: rgb(211, 104, 104);
+    font-weight: 700;
+}
+
+.box-02 {
+    display: none;
+}
+
+.testemonial-client {
+    display: flex;
+    text-align: center;
+    margin: 50px 10px 0 50px;
+}
+
+.testemonial-client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testemonial-client-name {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.testemonial-client-about {
+    text-align: left;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.testemonial-client-content {
+    text-align: left;
+    flex-direction: column;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 20px;
+    width: 500px;
+    background-color: white;
+}
+
+.testemonial-client-content p {
+    background-color: white;
+    margin: 0;
+    padding: 2px 15px;
+}
+
+.testemonial-client img {
+    border: 2px lightgray solid;
+    border-radius: 100px;
+    padding: 3px;
+}
+
+.pillar {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+
+.pillar-item {
+    margin: 0 50px;
+}
+
+.pillar-item span {
+    font-size: 1rem;
+}
+
+.pillar-item h2 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.pillar p {
+    font-size: 1.5rem;
+}
+
+.coaching > h4 {
+    margin-bottom: 70px;
+}
+
+.coaching article {
+    border: 1px #ECECEC solid;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+.icon-coaching {
+    background-color: #111111;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.coaching ul {
+    list-style-type: circle;
+    padding: 10px 0 20px 0;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.coaching li {
+    float: none;
+    padding: 5px 20px;
+    margin: 7px 20px 7px 15px;
+    padding: 0;
+    /* border-bottom: 1px #ECECEC solid; */
+}
+
+.callToAction button {
+    margin: 0;
+}
+
+strong {
+    font-size: 1.2rem;
+    margin: 20px 10px 0 20px;
+    width: 300px;
+
+}
+
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+        background-color: #ffc400;
+        transform: scale(1);
+    }
+    
+    to {
+        background-color: #ffea4e;
+        transform: scale(1.1);
+    }
+  }
