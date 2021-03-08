@@ -1,0 +1,12 @@
+<svg width="1000" height="1500" xmlns="http://www.w3.org/2000/svg">
+    <!-- <path d="M 10 0 C 40 10, 200 10, 95 80 S 150 150, 180 400" stroke="black" stroke-width="50" fill="transparent"/> -->
+    <!-- d="M 10 20 C 80 100, 300 50, 95 250 S 300 250, 300 600" -->
+    <path
+    d="
+    M 0,0
+    Q 500,400 200,800
+    T 400,1500
+    
+    " stroke="white" stroke-width="100" fill="none"/>
+</svg>
+
