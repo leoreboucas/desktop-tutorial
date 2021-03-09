@@ -43,30 +43,30 @@ function validationForm(name, email, from, msg) {
     if(name == null || name.trim() == "") {
         required = false;
         if (from == "freeSession")
-            document.getElementById("validationName").innerHTML = "*Name is required.";
+            document.getElementById("validationName").innerHTML = "*Name is required";
         else
-            document.getElementById("validationNameContact").innerHTML = "*Name is required.";
+            document.getElementById("validationNameContact").innerHTML = "*Name is required";
     }
 
     if(email == null || email.trim() == "") {
         required = false;
         if (from == "freeSession")
-            document.getElementById("validationEmail").innerHTML = "*Email is required.";
+            document.getElementById("validationEmail").innerHTML = "*E-mail is required";
         else
-            document.getElementById("validationEmailContact").innerHTML = "*Email is required.";
+            document.getElementById("validationEmailContact").innerHTML = "*E-mail is required";
     }
     else if(!email.match(mailFormat)) {
         required = false;
         if (from == "freeSession")
-            document.getElementById("validationEmail").innerHTML = "*Email is invalid.";
+            document.getElementById("validationEmail").innerHTML = "*E-mail is invalid";
         else
-            document.getElementById("validationEmailContact").innerHTML = "*Email is invalid.";
+            document.getElementById("validationEmailContact").innerHTML = "*E-mail is invalid";
     }
 
     if(from == "contact") {
         if(msg == null || msg.trim() == "") {
             required = false;
-            document.getElementById("validationMsgContact").innerHTML = "*Message is required.";
+            document.getElementById("validationMsgContact").innerHTML = "*Message is required";
         }
     }
     
@@ -83,9 +83,9 @@ function validation(message, from) {
     }
     else {
         if (from == "freeSession")
-            document.getElementById("errorSendEmail").innerHTML = "Oops, something went wrong... Please, try again or email me: leo@leoreboucas.com";
+            document.getElementById("errorSendEmail").innerHTML = "Oops! Something went wrong... Please, try again or email me: leo@leoreboucas.com";
         else
-            document.getElementById("errorContact").innerHTML = "Oops, something went wrong... Please, try again or email me: leo@leoreboucas.com";    
+            document.getElementById("errorContact").innerHTML = "Oops! Something went wrong... Please, try again or email me: leo@leoreboucas.com";    
     }
 }
 
@@ -139,10 +139,10 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal)
-        modal.style.display = "none";
-}
+// window.onclick = function(event) {
+//     if (event.target == modal)
+//         modal.style.display = "none";
+// }
 
 function showMoreCases (box) {
     document.getElementById(box).style.display = "flex";
