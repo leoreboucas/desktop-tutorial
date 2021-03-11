@@ -162,7 +162,7 @@ var txt = "You want to improve your work life,";
 var speed = 60;
 var speedButton = 480;
 
-document.getElementById("pitch-02").style.display = "none";
+//document.getElementById("pitch-02").style.display = "none";
 function typeWriter() {
     if (i < txt.length) {
         document.getElementById("pitch-01").innerHTML += txt.charAt(i);

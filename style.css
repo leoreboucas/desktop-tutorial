@@ -50,16 +50,12 @@ section header h2 {
 
 .pHeader{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
-    /* height: 500px; */
-    /* width: 800px; */
     margin: 0;
     margin-top: 7%;
     margin-left: 20%;
-    /* background-color: aquamarine; */
 }
 
 h1 {
@@ -424,6 +420,7 @@ span {
     text-align: center;
     margin: 0 10px 13px 10px;
     color: #808080;
+    font-weight: 500;
 }
 
 .form-modal-p {
@@ -452,10 +449,16 @@ span {
 input {
     margin: 0 10px 10px 10px;
     padding: 10px 13px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
     border: 1px lightgray solid;
     border-radius: 5px;
+}
+
+::placeholder {
+    color: #808080;
 }
 
 .input-contact {
@@ -692,18 +695,86 @@ strong {
 
 }
 
-.glow {
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
-    from {
-        background-color: #ffc400;
-        transform: scale(1);
+
+
+
+@media only screen and (max-width: 575.98px) {
+    
+    .pHeader {
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
-    to {
-        background-color: #ffea4e;
-        transform: scale(1.1);
+    h1 {
+        font-size: 2.35rem;
+        width: 90px;
     }
+
+    h5 {
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 270px;
+        padding: 7px 10px;
+        margin: 4px 0 10px 0;
+    }
+
+    button {
+        margin: 0px 5px;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    li {
+        padding: 20px 5px;
+        float: left;
+        font-size: 0.7rem;
+    }
+/* 
+    .logo {
+        margin-top: 10px;
+        width: 64px;
+        height: 35px;
+    } */
+
+    .imageTop{
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    
+
+    /* body {
+        overflow-x: hidden;
+    }
+    .pHeader {
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+    
+    h1 {
+        font-size: 1.35rem;
+        width: 90px;
+    }
+
+    h5 {
+        font-size: 0.75rem;
+        line-height: 1.35;
+    
+        width: 145px;
+        padding: 7px 10px;
+        margin: 4px 0 10px 0;
+    }
+
+    button {
+        margin: 0px 5px;
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    li {
+        padding: 20px;
+        float: left;
+        font-size: 0.7rem;
+    } */
   }
