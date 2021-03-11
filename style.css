@@ -742,6 +742,9 @@ strong {
         background-size: cover;
     }
 
+    .modal-content {
+        width: 300px;
+      }
     
 
     /* body {
