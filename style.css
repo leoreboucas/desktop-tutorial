@@ -501,6 +501,7 @@ button {
 
 .form-modal .button-free-session {
     color: #444;
+    margin: 0 10px;
 }
 
 .button-free-session {
@@ -737,14 +738,14 @@ strong {
         height: 35px;
     } */
 
-    .imageTop{
+    .imageTop {
         background-position: bottom;
         background-size: cover;
     }
 
     .modal-content {
-        width: 300px;
-      }
+        width: 280px;
+    }
     
 
     /* body {
