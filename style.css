@@ -498,20 +498,21 @@ button {
     color: #222;
 }
 
+.pHeader .button-free-session {
+    margin: 0 10px 100px 0;
+}
+
 .form-modal .button-free-session {
     color: #444;
     margin: 0 10px;
-}
-
-.pHeader .button-free-session {
-    margin: 0 10px 100px 0;
 }
 
 .button-free-session {
     background-color: #ffcc00;
     margin: 0;
     /* align-self: center; */
-    /* margin-left: 115px; */
+   
+ /* margin-left: 115px; */
 }
 
 .button-free-session:hover {
