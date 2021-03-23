@@ -6,25 +6,17 @@ body, html {
     margin: 0;
     background-color: black;
     height: 100%;
-    color: #333333;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.menu {
-    height: 62px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+section {
     display: flex;
-    justify-content: space-between;
-}
-
-section{
-    min-height: 500px;
-    display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: center;
-    flex-direction: column;
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding: 140px 0;
+    min-height: 500px;
 }
 
 section header {
@@ -35,26 +27,6 @@ section header {
 
 section header h2 {
     margin-top: 20px;
-}
-
-.imageTop{
-    background-image: url("images/imageTop-03.jpeg");
-    width: 100%;
-    background-position: bottom;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
-}
-
-.pHeader{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0;
-    margin-top: 7%;
-    margin-left: 20%;
 }
 
 h1 {
@@ -84,25 +56,6 @@ h5 {
     justify-content: flex-start;
 }
 
-.callToAction {
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    /* padding: 7px 7px 7px 15px; */
-    /* background-color: rgba(128, 128, 128, 0.5); */
-    /* align-items: center; */
-    justify-content: flex-start;
-    /* height: 150px; */
-    margin-bottom: 270px;
-    border: none;
-    border-radius: 5px;
-    width: 300px;
-}
-
-.program .callToAction {
-    background-color: rgb(240, 239, 239);
-}
-
 nav {
     font-weight: 200;
     color: rgb(180, 180, 180);
@@ -129,13 +82,9 @@ ul {
 }
 
 li {
-    padding: 20px;
     float: left;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.logo {
-    margin-left: 10px;
+    padding: 20px 5px;
+    font-size: 1.125rem;
 }
 
 p {
@@ -146,47 +95,10 @@ p {
 
 h4 {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 1.1rem;
+    font-size: 4rem;
+    font-weight: 300;
     margin: 2px;
 }
-
-.container {
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(248, 248, 244);
-    height: 100%;
-}
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: 0 0;
-}
-
-.boxMsg {
-    text-align: left;
-    flex-direction: column;
-    border-style: solid;
-    border-color: #b3b3b3;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 7px;
-    margin: 20px;
-    width: 285px;
-    background-color: white;
-}
-
-.boxMsg p {
-    background-color: white;
-    margin: 0;
-    padding: 2px 15px;
-}
-
-
 
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -196,14 +108,27 @@ h2 {
 
 h3 {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.35;
+    font-size: 1.25rem;
+    font-weight: 400;
+
     margin: 0;
-    padding: 10px 15px 4px 15px;
-    font-size: 1.3rem;
-    background-color: white;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 13px 0;
 }
 
 header h2 {
     margin-bottom: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
 }
 
 article p {
@@ -220,19 +145,130 @@ article h4 {
     font-size: 1.2rem;
 }
 
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    margin-right: 10px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h3 strong {
+    font-size: 1.5rem;
+}
+
+footer {
+    height: 62px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: #222;
+}
+
+textarea {
+    margin: 0 10px 10px 10px;
+    padding: 10px 13px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+
+input {
+    margin: 0 10px 10px 10px;
+    padding: 10px 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #808080;
+}
+
+.main-nav {
+    height: 62px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.hero-image {
+    background-image: url("images/imageTop-03.jpeg");
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 7%;
+    margin-left: 20%;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 140px;
+}
+
 .coaching {
-    /* background-color: rgb(243, 242, 235);
-    background-image: url("images/path-coaching.svg");
-    background-repeat: no-repeat;
-    background-position:bottom; */
     background-color: white;
 }
 
-/* .coaching header {
-    background-image: url("images/path-coaching.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-} */
+.summary {
+    display: flex;
+    padding-bottom: 140px;
+}
+
+.summary-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 5px;
+    width: 260px;
+    background-color: #F6F5F3;
+}
+
+.summary-box img {
+    margin: 5px 0 7px 0;
+}
 
 .testemonial {
     background-color: rgb(247, 247, 247);
@@ -269,95 +305,16 @@ article h4 {
     height: 500px;
 }
 
-.needCoach em {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #838383;
-    background-color: rgb(247, 247, 247);
-    /* font-family: 'Nothing You Could Do', cursive; */
-    padding: 2px 2px;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-}
-
-.needCoach article {
-    padding-top: 30px;
-    max-width: 800px; ;
-}
-
-span {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
-}
-
-.needCoachArticle {
-    width: 800px;
-    line-height: 150%;
-}
-
-.needCoachArticle .callToAction {
-    background-color: rgba(128, 128, 128, 0.2);
-    margin-top: 30px;
-}
-
-
-
-
-
- 
-.modal2 {
-    display: none;
-    position: fixed; 
-    padding-top: 50px;
-    left: 0; 
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .modal-content2 {
-    position: relative; 
-    background-color: white;
-    padding: 20px; 
-    margin: auto; 
-    width: 200px;  
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-  }
-
-  .close-btn {
+.close-btn {
     float: right; 
     color: lightgray; 
     font-size: 24px;  
     font-weight: bold;
-  }
+}
 
-  .close-btn:hover {
+.close-btn:hover {
     color: darkgray;
-  }
-
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  }
- 
-
-
-
-
-
-
+}
 
   /* The Modal (background) */
 .modal {
@@ -374,45 +331,36 @@ span {
   }
   
   /* Modal Content/Box */
-  .modal-close {
-    /* background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 10px 20px;
-    border: 1px solid #888; */
+.modal-close {
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
     margin: 15% auto; /* 15% from the top and centered */
     padding: 0;
     width: 420px; /* Could be more or less, depending on screen size */
-  }
+}
 
-  .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 10px 20px 20px;
     border: 1px solid #888;
     width: 400px; /* Could be more or less, depending on screen size */
     border-radius: 5px;
-  }
+}
   
   /* The Close Button */
-  .close {
+.close {
     color: #aaa;
     color: darkgray;
     float: right;
     font-size: 20px;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .close:hover,
-  .close:focus {
-    /* color: black;
-    color: lightgray; 
-    text-decoration: none;*/
-    /* border: 1px darkgray solid;
-    border-radius: 25px; */
+.close:hover,
+.close:focus {
     cursor: pointer;
-  }
+}
 
 .title-modal {
     text-transform: capitalize;
@@ -445,34 +393,10 @@ span {
     margin: 0 0 0 10px;
 }
 
-input {
-    margin: 0 10px 10px 10px;
-    padding: 10px 13px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #808080;
-    border: 1px lightgray solid;
-    border-radius: 5px;
-}
-
-::placeholder {
-    color: #808080;
-}
-
 .input-contact {
     border: 2px #6d6d6d solid;
     color: white;
     background-color: #111111;
-}
-
-textarea {
-    margin: 0 10px 10px 10px;
-    padding: 10px 13px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    border: 1px lightgray solid;
-    border-radius: 5px;
 }
 
 .textarea-contact {
@@ -485,37 +409,25 @@ textarea {
     margin: 0 10px 10px 10px;
 }
 
-button {
-    margin: 0 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.125rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    outline: none;
-    color: #222;
-}
-
-.pHeader .button-free-session {
+main .bt-free-session {
     margin: 0 10px 100px 0;
 }
 
-.form-modal .button-free-session {
+.form-modal .bt-free-session {
     color: #444;
     margin: 0 10px;
 }
 
-.button-free-session {
+.bt-free-session {
     background-color: #ffcc00;
     margin: 0;
+    font-weight: 600;
     /* align-self: center; */
    
  /* margin-left: 115px; */
 }
 
-.button-free-session:hover {
+.bt-free-session:hover {
     background-color: #fada20;
     /* transform: scale(1.1); */
 }
@@ -527,15 +439,6 @@ button {
 
 .button-contact:hover {
     background-color: #6d6d6d;
-}
-
-footer {
-    height: 62px;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-color: #111111;
-    color: white;
-    display: flex;
-    justify-content: space-between;
 }
 
 .footer-new {
@@ -567,10 +470,6 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-img {
-    margin-right: 10px;
-}
-
 .contact-success {
     color: rgb(105, 180, 134);
     font-weight: 700;
@@ -581,10 +480,6 @@ img {
 .contact-error {
     color: rgb(211, 104, 104);
     font-weight: 700;
-}
-
-.box-02 {
-    display: none;
 }
 
 .testemonial-client {
@@ -634,38 +529,10 @@ img {
     padding: 3px;
 }
 
-.pillar {
-    display: flex;
-    align-items: center;
-    background-color: #f7f7f7;
-    padding: 20px 0;
-}
 
-.pillar-item {
-    margin: 0 50px;
-}
-
-.pillar-item span {
-    font-size: 1rem;
-}
-
-.pillar-item h2 {
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-.pillar p {
-    font-size: 1.5rem;
-}
 
 .coaching > h4 {
     margin-bottom: 70px;
-}
-
-.coaching article {
-    border: 1px #ECECEC solid;
-    margin: 10px;
-    /* padding: 10px; */
 }
 
 .icon-coaching {
@@ -674,38 +541,28 @@ img {
     text-align: center;
     padding: 20px;
 }
-.coaching ul {
+
+/* .coaching ul {
     list-style-type: circle;
     padding: 10px 0 20px 0;
     margin-left: 20px;
     width: 300px;
-}
+} */
 
 .coaching li {
     float: none;
-    padding: 5px 20px;
-    margin: 7px 20px 7px 15px;
-    padding: 0;
-    /* border-bottom: 1px #ECECEC solid; */
+    margin: 0 10px;
+    padding: 3px 0 3px 20px;
+
+    background-image: url('images/bullet-yellow.svg');
+    background-position: left center;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
 }
-
-.callToAction button {
-    margin: 0;
-}
-
-strong {
-    font-size: 1.2rem;
-    margin: 20px 10px 0 20px;
-    width: 300px;
-
-}
-
-
-
 
 @media only screen and (max-width: 575.98px) {
     
-    .pHeader {
+    main {
         margin-top: 15%;
         margin-left: 10%;
         margin-right: 10%;
@@ -729,21 +586,10 @@ strong {
         padding: 5px 10px;
     }
 
-    li {
-        padding: 20px 5px;
-        float: left;
-        font-size: 0.7rem;
-    }
-
     .logo {
         margin-top: 10px;
         width: 90px;
         height: 48px;
-    }
-
-    .imageTop {
-        background-position: bottom;
-        background-size: cover;
     }
 
     .modal-content {
@@ -754,7 +600,7 @@ strong {
     /* body {
         overflow-x: hidden;
     }
-    .pHeader {
+    main {
         margin-top: 7%;
         margin-left: 5%;
     }

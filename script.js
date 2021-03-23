@@ -119,7 +119,7 @@ function cleanMsgContact() {
 }
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("modal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -195,7 +195,7 @@ function typeWriter2() {
 }
 
 function turnOnButton() {
-    document.getElementById("buttonCallToAction").style.display = "block";
+    document.getElementById("bt-cta").style.display = "block";
 }
 
 var iButton = 0;
@@ -203,7 +203,7 @@ var txtButton = "I can help you!";
 
 function typeWriterButton() {
     if (iButton < txtButton.length) {
-        document.getElementById("buttonCallToAction").innerHTML += txtButton.charAt(iButton);
+        document.getElementById("bt-cta").innerHTML += txtButton.charAt(iButton);
         iButton++;
         setTimeout(typeWriterButton, speed);
     }
@@ -215,10 +215,10 @@ var iButton2 = 0;
 var txtButton2 = " Try a free session.";
 
 function typeWriterButton2() {
-   // document.getElementById("buttonCallToAction").innerHTML = txtButton;
+   // document.getElementById("bt-cta").innerHTML = txtButton;
     
     if (iButton2 < txtButton2.length) {
-        document.getElementById("buttonCallToAction").innerHTML += txtButton2.charAt(iButton2);
+        document.getElementById("bt-cta").innerHTML += txtButton2.charAt(iButton2);
         iButton2++;
         setTimeout(typeWriterButton2, speed);
     }
