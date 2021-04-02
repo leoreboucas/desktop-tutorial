@@ -109,6 +109,10 @@ h6 {
     padding: 0;
 }
 
+.testemonial h6 {
+    font-size: 1.125rem;
+}
+
 article {
     display: flex;
     flex-direction: column;
