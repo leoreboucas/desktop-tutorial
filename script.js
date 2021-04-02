@@ -83,9 +83,9 @@ function validation(message, from) {
     }
     else {
         if (from == "freeSession")
-            document.getElementById("errorSendEmail").innerHTML = "Oops! Something went wrong... Please, try again or email me: leo@leoreboucas.com";
+            document.getElementById("errorSendEmail").innerHTML = "Oops! Something went wrong... Please, try again or e-mail me: leo@leoreboucas.com";
         else
-            document.getElementById("errorContact").innerHTML = "Oops! Something went wrong... Please, try again or email me: leo@leoreboucas.com";    
+            document.getElementById("errorContact").innerHTML = "Oops! Something went wrong... Please, try again or e-mail me: leo@leoreboucas.com";    
     }
 }
 
@@ -97,6 +97,11 @@ function callToAction() {
 
 function menuCoaching() {
     var element = document.getElementById("coaching");
+    element.scrollIntoView();
+}
+
+function menuContact() {
+    var element = document.getElementById("contact");
     element.scrollIntoView();
 }
 
@@ -232,3 +237,19 @@ function typeWriterButton2() {
 //         typeWriter();
 //     }
 //   })
+
+//menu toggle
+(function($){
+    $('.nav-toggle').click(function(e){
+        e.preventDefault();
+        $('.nav-toggle').toggleClass('active');
+        $('.nav-menu').toggleClass('active');
+        $('.nav-overlay').toggleClass('active');
+    })
+    $('.nav-overlay').click(function(e){
+        e.preventDefault();
+        $('.nav-toggle').toggleClass('active');
+        $('.nav-menu').toggleClass('active');
+        $('.nav-overlay').toggleClass('active');
+    })
+})(jQuery);

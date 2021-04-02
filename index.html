@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" href="images/brand_leoreboucas_favicon.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="hero-image">
+    <div class="hero-image" id="home">
         <header class="main-nav">
-            <img class="logo" src="images/brand_leoreboucas_header.png">
+            <img class="logo" src="images/logo-white.svg">
             <nav>
-                <ul>
-                    <!-- <li>leo@leoreboucas.com</li> -->
-                    <li><a href="https://instagram.com/leoreboucas" target="_blank"><img src="images/instagram-brands.svg"></a></li>
+                <ul class="nav-menu">
+                    <li><a href="#coaching">my coaching</a></li>
+                    <li><a href="#testemonial">success stories</a></li>
+                    <li><a href="#program">plan</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
-            </nav>
+                <div class="nav-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+            </nav>    
         </header>
+		<div class="nav-overlay"></div>
         <main class="main-page">
             <h1>IMPROVE PROFESSIONAL RESULTS</h1>
             <h5>Work on your strengths and weaknesses following the best practices.</h5>
@@ -42,7 +52,7 @@
             </div>
         </main>
     </div>
-    <section class="coaching">
+    <section class="coaching" id="coaching">
         <header class="header-section">
             <h4>Without shortcuts.</h4>
             <h4>Building solid foundations.</h4>
@@ -92,12 +102,12 @@
         </div>    
     </section>
     <header class="header-testemonial"></header>
-    <section class="testemonial">
+    <section class="testemonial" id="testemonial">
         <header class="header-section">
             <h4>Without perfect lifes.</h4>
             <h4>But significantly better.</h4>
         </header>
-        <div class="testemonial-grid">
+        <div class="grid">
             <article>
                 <div class="testemonial-client">
                     <img class="img-testemonial" src="images/testemonial-itana-lemos.jpg">
@@ -183,7 +193,7 @@
         </footer>
     </section>
     <footer class="footer-testemonial"></footer>
-    <section class="program">
+    <section class="program" id="program">
         <div class="program-detail">
             <img src="images/icon-session-online.svg">
             <h6>Individual Online Session</h6>
@@ -201,6 +211,88 @@
         </div>
         <button id="bt-cta" onclick="openModal()" class="bt-free-session">Request a free session!</button>
     </section>
+    <section class="about" id="about">
+        <header class="header-section">
+            <h4>Hi! I'm Leo!</h4>
+        </header>
+        <div class="grid">
+            <main class="about-box">
+                <h2>“ When I saw my gifts contributing even more to people's lives, I migrated from computers to the ’human machine’. ”</h4>
+            </main>
+            <article>
+                <img src="images/photo-leo.jpg">
+            </article>
+            <article class="about-box about-box-mission">
+                <h6>Mission</h6>
+                <p>Helping those who are open for changes and to work and live better.</p>
+                <h6>Vision</h6>
+                <p>Being a source of wisdom.</p>
+                <h6>Values</h6>
+                <ul class="ul-about">
+                    <li>Trust in God</li>
+                    <li>Self-Responsibility</li>
+                    <li>Continuous Growth</li>
+                    <li>Sustainable Lifestyle</li>
+                    <li>Family Oriented</li>
+                </ul>
+            </article>
+            <article class="about-box about-box-experiences">
+                <p>Previously, I graduated in computer science, with 10 years of experience as a consultant and project leader for large corporations.</p>
+                <p><strong>Since 2012, exclusively, coach.</strong></p>
+                <p>And now is the time to integrate these two amazing experiences...</p>
+                <p><strong>More news soon!</strong></p>
+            </article>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <header class="header-section">
+            <h4>A Brazilian living in Poland.</h4>
+            <h4>And connected with the world.</h4>
+        </header>
+        <div class="grid">
+            <main class="contact-info">
+                <div class="contact-item">
+                    <img src="images/icon-mail.svg">
+                    <h6>leo@leoreboucas.com</h6>
+                </div>
+                <div class="contact-item">
+                    <img src="images/icon-whatsapp.svg">
+                    <a href="https://wa.me/48509963316" target="_blank">+48 509 963 316</a>
+                </div>
+                <div class="contact-item">
+                    <img src="images/icon-instagram.svg">
+                    <a href="https://instagram.com/leoreboucas" target="_blank">leoreboucas</a>
+                </div>
+            </main>
+            <div class="form-contact">
+                <p class="form-modal-msg contact-error" id="validationNameContact"></p>
+                <input type="text" id="nameContact" class="input-contact" placeholder="Your name*">
+                <p class="form-modal-msg contact-error" id="validationEmailContact"></p>
+                <input type="email" id="emailContact" class="input-contact" placeholder="Your e-mail*">
+                <p class="form-modal-msg contact-error" id="validationMsgContact"></p>
+                <textarea id="msgContact" cols="30" rows="10" class="textarea-contact" placeholder="Your message*"></textarea>
+                <button onclick="sendEmail('contact')" class="button-contact">E-mail Me</button>
+                <p class="p-msg contact-success" id="successContact"></p>
+                <p class="p-msg contact-error" id="errorContact"></p>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="copyright">
+            <img class="logo" src="images/logo-white.svg">
+            <p>© 2021</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a onclick="openModal()" class="link-free-session">Request a free session!</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#coaching">my coaching</a></li>
+                <li><a href="#testemonial">success stories</a></li>
+                <li><a href="#program">plan</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+        </nav>
+    </footer>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="script.js"></script>
 </body>
