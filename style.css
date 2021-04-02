@@ -748,7 +748,6 @@ ul.nav-menu li a {
 	-webkit-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-    border-bottom: 1px solid rgb(32, 32, 32);
 }
 
 ul.nav-menu li a:hover {
@@ -947,6 +946,7 @@ span.icon-bar {
 		padding:0;
 		text-align:center;
 		background-color:#292929;
+        border-bottom: 1px solid rgb(32, 32, 32);
 	}
 
 	ul.nav-menu li a:hover {
